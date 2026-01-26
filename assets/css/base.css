@@ -1,0 +1,59 @@
+/*this is the font family and colour for the whole page as of the first iteration this is roboto*/
+* {
+    font-family: Roboto, sans-serif;
+    color: #000000;
+}
+
+
+/*holy moly css has variables will this make my life easier or harder*/
+:root {
+    --header-height: 50px;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+/*this should be always at the top of the page*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background-color:rgb(200, 230, 255);
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in forwards;
+}
+
+
+.headerButton {
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    top: 16px;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: 3px;
+    outline-width: 2px;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in forwards;
+}
+
+#headerButtonHome {
+    left: 10%;
+    animation-delay: 0.2s;
+}
+
+#headerButtonInfo {
+    left: 15%;
+    animation-delay: 0.35s;
+}
+
+#headerButtonProjects {
+    left: 20%;
+    animation-delay: 0.5s;
+}
+
