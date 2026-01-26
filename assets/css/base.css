@@ -1,13 +1,20 @@
 /*this is the font family and colour for the whole page as of the first iteration this is roboto*/
 * {
-    font-family: Roboto, sans-serif;
-    color: #000000;
+    font-family:  Verdana, sans-serif;
+    color: #ffffff;
+    background-color: var(--background-colour)
+}
+
+.codeText {
+    font-family: "Lucida Console";
 }
 
 
 /*holy moly css has variables will this make my life easier or harder*/
 :root {
     --header-height: 50px;
+    --background-colour: rgb(44, 44, 44);
+    --header-background-colour: rgb(200, 230, 255);
 }
 
 @keyframes fadeIn {
@@ -23,7 +30,7 @@
     left: 0;
     right: 0;
     height: var(--header-height);
-    background-color:rgb(200, 230, 255);
+    background-color: var(--header-background-colour);
     opacity: 0;
     animation: fadeIn 0.3s ease-in forwards;
 }
@@ -33,6 +40,8 @@
     text-decoration: none;
     position: relative;
     font-weight: bold;
+    color: var(--background-colour);
+    background-color: var(--header-background-colour);
     top: 16px;
     outline-width: 1px;
     outline-style: solid;

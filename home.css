@@ -1,8 +1,7 @@
 
 /*this is the main title whiich is my name*/
-#titleName {
+.title {
     position: relative;
-    text-align: center;
     top: var(--header-height);
     opacity: 0;
     animation: fadeIn 0.3s ease-in forwards;
