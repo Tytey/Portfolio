@@ -12,11 +12,13 @@
 
 /*holy moly css has variables will this make my life easier or harder*/
 :root {
-    --header-height: 50px;
+    --header-height: 60px;
+    --header-height-offset: 70px;
     --background-colour: rgb(44, 44, 44);
     --header-background-colour: rgb(200, 230, 255);
 }
 
+/*cool fade in transition*/
 @keyframes fadeIn {
     to {
       opacity: 1;
@@ -25,17 +27,16 @@
 
 /*this should be always at the top of the page*/
 #header {
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: var(--header-height);
     background-color: var(--header-background-colour);
-    opacity: 0;
-    animation: fadeIn 0.3s ease-in forwards;
 }
 
-
+/*style for the buttons - probably not most efficent way but hey thats human code*/
 .headerButton {
     padding: 6px 15px;
     text-decoration: none;
@@ -43,17 +44,16 @@
     font-weight: bold;
     color: var(--background-colour);
     background-color: var(--header-background-colour);
-    top: 16px;
+    top: 22px;
     outline-width: 1px;
     outline-style: solid;
     outline-offset: 0px;
     outline-color: black;
-    opacity: 0;
-    animation: fadeIn 0.3s ease-in forwards;
     box-shadow: 5px 5px;
     transition: box-shadow 0.2s ease,  background-color 0.3s ease, color 0.3s ease;
 }
 
+/*a really cool hover effect*/
 .headerButton:hover {
     box-shadow: 0px 0px;
     background-color: var(--background-colour);
@@ -62,16 +62,13 @@
 
 #headerButtonHome {
     left: 5%;
-    animation-delay: 0.2s;
 }
 
 #headerButtonInfo {
     left: 10%;
-    animation-delay: 0.35s;
 }
 
 #headerButtonProjects {
     left: 15%;
-    animation-delay: 0.5s;
 }
 

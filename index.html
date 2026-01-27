@@ -8,6 +8,7 @@ Im building something that I didnt need to build to show that I can
 This wasnt a prompt put into AI
 This was code built on my prebuilt pc in my uni room using my brain
 Anyways enjoy poking around - ill try comment stuff for the sake of it
+Also side note this is my first proper time using git as im building it on my pc and laptop
 -->
 
 <!--I was told to use these html and body tags as "good practive"-->
@@ -35,10 +36,36 @@ Anyways enjoy poking around - ill try comment stuff for the sake of it
         <a id="headerButtonProjects" class="headerButton" href="../projects/">Projects</a>
     </header>
 
-    <h1 class="title codeText" id="titleText1"></h1>
-    <h1 class="title codeText" id="titleText2"></h1>
-    <h1 class="title codeText" id="titleText3"></h1>
+
+    <!--
+    This is the really cool header - I want it to have this clean cool coding style
+    I think im coding to have simple header announcing myself then a button that has a cool transition and give some more info
+    -->
+
+    <div id="titleCodeDiv">
+        <h1 class="titleCode" id="titleCodeText1"></h1>
+        <h1 class="titleCode" id="titleCodeText2"></h1>
+        <h1 class="titleCode" id="titleCodeText3"></h1> 
+    </div>
+
+    <div id="titleDiv">
+        <h1 class="title" id="titleText1"></h1>
+        <h1 class="title" id="titleText2"></h1>
+        <h1 class="title" id="titleText3"></h1> 
+    </div>
+    
+
+
+    <!--
+    this is the button
+    best practive is to have it like this apparently
+    hooray to my photo editing skills to turn it into the right colour
+    -->
+    <button id="downArrow" onclick="downArrowPressed()">
+        <img src="assets/imgs/downArrow.png">
+    </button>
+
 
 </body>
-<script src="home.js" defer></script>
+<script src="home.js" defer></script> <!--the java needs to be here not sure why but it makes it work-->
 </html>

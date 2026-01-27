@@ -1,7 +1,47 @@
 
 /*this is the main title whiich is my name*/
+.titleCode {
+    position: relative;
+    opacity: 1;
+    font-size: 50px;
+    font-family: "Lucida Console";
+}
+
+#titleCodeDiv {
+    top: var(--header-height-offset);
+    position: absolute;
+}
+
 .title {
     position: relative;
-    top: var(--header-height);
     opacity: 1;
+    font-size: 40px;
 }
+
+#titleDiv {
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: var(--header-height-offset);
+    position: absolute;
+}
+
+#downArrow {
+    position: fixed;
+    bottom: 2%;
+    left: 48%;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    border: none;
+    outline: none;
+}
+
+#downArrow img {
+    width: 100px;
+    transition: transform 0.5s ease;
+}
+
+#downArrow:hover img {
+    transform: scale(1.1);
+}
+
