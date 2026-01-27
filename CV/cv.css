@@ -1,0 +1,32 @@
+#titleDiv {
+    top: var(--header-height-offset);
+    position: absolute;
+}
+
+#title {
+    position: relative;
+    font-size: 30px;
+}
+
+#downloadButton {
+    position: relative;
+    top: 0;
+    box-shadow: none;
+}
+
+#cvFrame {
+    position: absolute;
+    top: 120px;
+    width: 200%;
+    height: 1000px;
+
+}
+
+@media (max-width: 767px) {
+  #cvFrame {
+    top: 150px;
+    width: 100%;
+    left: 0;
+    height: 700px;
+  }
+}
