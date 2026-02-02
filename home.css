@@ -7,6 +7,13 @@
     font-family: "Lucida Console";
 }
 
+@media (max-width: 767px) {
+    .titleCode {
+        top: 10px;
+        font-size: 30px;
+    }
+}
+
 #titleCodeDiv {
     top: var(--header-height-offset);
     position: absolute;

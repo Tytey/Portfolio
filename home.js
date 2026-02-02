@@ -25,6 +25,18 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+async function cursorAnimation() {
+    while (typing) {
+        document.getElementById("titleCodeText3").innerHTML = 'print("I am a software developer")'
+        await sleep(500)
+        if (typing) {
+            document.getElementById("titleCodeText3").innerHTML = 'print("I am a software developer")|'
+            await sleep(500)
+        }
+        
+    }
+}
+
 async function initiateTitle(){
     await sleep(1000)
     document.getElementById("titleText1").innerHTML = "Hello world"
@@ -64,6 +76,7 @@ function typeTitleText() {
         } else {
             i = 0
             l = 3
+            cursorAnimation()
         }
     }
 }
